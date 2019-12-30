@@ -12,13 +12,13 @@ pipeline {
         stage ("Init Config") {
             steps {
                 script {
-                    env
+                    sh "env"
                 }
             }
         }
         stage('代码 Clone') {
             steps {
-                sh "cd /root/backdemo/gs-test-demo;sudo mvn test; sudo mvn clean;"
+                sh "cd /root/backdemo/gs-test-demo; mvn test;  mvn clean;"
 
             }
         }
