@@ -4,7 +4,7 @@ pipeline {
 
     environment {
         BUILDDIR = "${HOME}/backdemo/"
-        PROJECT_NAME = "${gs-test-demo}"
+        PROJECT_NAME = "gs-test-demo"
     }
 
     stages {
