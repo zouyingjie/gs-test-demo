@@ -1,11 +1,14 @@
 pipeline {
     agent any
-
+    
+    tools {
+        maven 'M3'
+    }
 
     environment {
         BUILDDIR = "${HOME}/backdemo/"
         PROJECT_NAME = "gs-test-demo"
-        MAVEN_HOME="/usr/local/apache-maven-3.6.2"
+
     }
 
     stages {
