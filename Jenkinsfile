@@ -18,7 +18,8 @@ pipeline {
         }
         stage('代码 Clone') {
             steps {
-                sh "cd ${BUILDDIR}/${PROJECT_NAME};mvn test;"
+                sh "cd /root/backdemo/gs-test-demo;sudo mvn test; sudo mvn clean;"
+
             }
         }
 
